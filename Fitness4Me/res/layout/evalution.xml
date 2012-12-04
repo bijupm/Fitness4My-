@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_bg" >
+
+    <LinearLayout
+        android:id="@+id/topevalutionheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/headerevalutionicon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imglady"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/topevalutionheader"
+        android:background="@drawable/big_green_container"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="22dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="22dp" >
+
+        
+
+            <TextView
+                android:id="@+id/txtPleaseHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Please help us!"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtheadEv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="If you are satisfied with Fitness4.me please let OTHERS know.If you would like to improve something, please tell US."
+                android:textColor="#ffffff"
+                android:textSize="16sp" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/btnEvYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yes_no_btn"
+                    android:padding="5dp"
+                    android:text="YES!I am satisfied with Fitness4.me and I would like to rate it"
+                    android:textColor="#ffffff"
+                    android:textSize="13dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="15dp"
+                    android:padding="15dp" />
+
+                <Button
+                    android:id="@+id/btnEvNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yes_no_btn"
+                    android:padding="5dp"
+                    android:text="NO! 
+I think there is room for improvement and I would like to give you my feedback."
+                    android:textColor="#ffffff"
+                    android:textSize="13dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:padding="8dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/topevalutionheader"
+                    android:gravity="top|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnEvlater"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/second_btn"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="I will rate this App later"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="8dp"
+                        android:padding="8dp" />
+
+                    <Button
+                        android:id="@+id/btnEvldntAsk"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/second_btn"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="Dont ask me again"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

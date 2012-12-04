@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+        android:gravity="top|center_horizontal"
+          android:background="@drawable/app_bg_landscape"
+             xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+      android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_height="fill_parent"
+     android:layout_width="match_parent"
+	
+  
+    android:paddingBottom="5dp"
+    android:orientation="vertical" >
+ 
+    <TableLayout
+        android:id="@+id/topheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal" >
+         <TableRow
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp" >
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+               
+                <ImageView
+                    android:id="@+id/headerimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                      android:adjustViewBounds="true"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/logo" />
+                   <View
+                android:layout_width="320dp"
+                android:layout_height="3dp"
+                android:background="#B8D30B"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+                      
+                  </View>
+            </LinearLayout>
+ 
+   </TableRow>
+        <TableRow
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:lineSpacingExtra="5dp"
+                android:id="@+id/lblAbout"
+                android:text="@string/aboutyourself"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                 />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_span="4"
+            android:gravity="left" >
+
+            <LinearLayout
+                android:id="@+id/liLayout"
+                android:layout_width="fill_parent"
+                android:layout_span="4"
+                android:gravity="left" >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:id="@+id/lblName"
+                    android:text="@string/name"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                     />
+
+                <EditText
+                    android:id="@+id/txtname"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </TableRow>
+  <TableRow
+            android:layout_width="fill_parent"
+            android:layout_span="4"
+            android:gravity="left" >
+
+            <LinearLayout
+                android:id="@+id/liLayoutLstName"
+                android:layout_width="fill_parent"
+                android:layout_span="4"
+                android:gravity="left" >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:id="@+id/lblLastName"
+                    android:text="Last Name"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                     />
+
+                <EditText
+                    android:id="@+id/txtLastname"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_span="4"
+            android:gravity="left|center_vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_span="4"
+                android:gravity="left" >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:id="@+id/lblIam"
+                    android:paddingTop="12dp"
+                    android:text="@string/iam"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                     />
+
+                <RadioGroup
+                    android:id="@+id/rbgroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="0dp" >
+
+                    <RadioButton
+                        android:id="@+id/rbbeginner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="          " />
+
+                    <RadioButton
+                        android:id="@+id/rbAdvanced"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="              " />
+
+                    <RadioButton
+                        android:id="@+id/rbExpert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20px"
+                        android:text="           " />
+                </RadioGroup>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_span="4"
+            android:gravity="left|top" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_span="5"
+                android:gravity="left" >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingTop="3dp"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/lblBAE"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingTop="3dp"
+                    android:text=" Beginner        Advanced         Expert"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                     />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_span="4"
+            android:gravity="left|center_vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_span="4"
+                android:gravity="left" >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/lblEmail"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/email"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                     />
+
+                <EditText
+                    android:id="@+id/txtemail"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_span="4"
+            android:gravity="left|center_vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_span="4"
+                android:gravity="left" >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/lblUserName"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/username"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                     />
+
+                <EditText
+                    android:id="@+id/txtUserName"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_span="4"
+            android:gravity="left|center_vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:gravity="left"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/lblPassword"
+                    android:imeOptions="actionSend|flagNoEnterAction"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/password"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                     />
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:password="true"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:paddingTop="6dp" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:id="@+id/lblAccept"
+                android:text="@string/accepttext"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                 />
+        </LinearLayout>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="3dp" >
+
+
+        <Button
+            android:id="@+id/imgnextuserinfo"
+            style="@style/Buttonportrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_portrait"
+            android:text="Sign Up" />
+    </LinearLayout>
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        >
+
+        <com.google.ads.AdView
+            android:id="@+id/adViewUserInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+             ads:adUnitId="a15074fa73f350f"
+            ads:loadAdOnCreate="true" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

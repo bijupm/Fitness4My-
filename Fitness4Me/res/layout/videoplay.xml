@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill_horizontal"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <!-- <include -->
+    <!-- layout="@layout/header" android:id="@+id/btnnavigation" /> -->
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="#ffffff"
+        android:gravity="right"
+        android:orientation="vertical" >
+     
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="#ffffff"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+             ads:adUnitId="a15074fa73f350f"
+            ads:loadAdOnCreate="true" />
+
+<!--         <Button -->
+<!--             android:id="@+id/btnplay" -->
+<!--             android:layout_width="70dp" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="right" -->
+<!--             android:background="@drawable/btn_portrait" -->
+<!--             android:text="Pause" -->
+<!--             android:textColor="#ffffff" -->
+<!--             android:textSize="17dp" -->
+<!--             android:textStyle="bold" /> -->
+
+<!--         <View -->
+<!--             android:layout_width="5dp" -->
+<!--             android:layout_height="5dp" -->
+<!--             android:background="#ffffff" /> -->
+
+        <Button
+            android:id="@+id/headeQuitricon"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_portrait"
+            android:text="Quit"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#92D050"
+        android:paddingBottom="10dp" >
+    </View>
+
+    <VideoView
+        android:id="@+id/surface_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        android:layout_weight="0"
+          >
+    </VideoView>
+ </LinearLayout>
+   
+
+</LinearLayout>

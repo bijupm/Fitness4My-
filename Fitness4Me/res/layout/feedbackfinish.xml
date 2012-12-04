@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_bg"
+    android:gravity="center_horizontal|top" >
+
+    <!-- HEADER -->
+
+    <LinearLayout
+        android:id="@+id/topfeedfinishheader"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:stretchColumns="*" >
+
+        <ImageView
+            android:id="@+id/headerfeedfinishicon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topfeedfinishheader"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/small_green_container"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical"
+            android:padding="22dp" >
+
+            <TextView
+                android:id="@+id/txtfinish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:text="Thank you very much for your feedback"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:padding="15dp" />
+
+            <Button
+                android:id="@+id/btnfinishsubmit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/second_btn"
+                android:text="Continue"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

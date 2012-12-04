@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_bg_landscape"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <!-- HEADER -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/topheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="20dp"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical|right" >
+
+                <ImageView
+                    android:id="@+id/headerimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                     android:adjustViewBounds="true"
+                    android:src="@drawable/logo" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Congratulations! Good Job! "
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/liketodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="What would you like to do now?"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="60dp" >
+
+        <Button
+            android:id="@+id/videoanother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_landscape"
+            android:text="Do another workout"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/app_bg_landscape" />
+
+        <Button
+            android:id="@+id/videoquit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_landscape"
+            android:text="Quit"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+         ads:adUnitId="a15074fa73f350f"
+        ads:loadAdOnCreate="true" />
+
+</RelativeLayout>

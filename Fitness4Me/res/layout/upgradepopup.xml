@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+           android:background="@drawable/congratz_land"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/cont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/popupClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/popupclose"
+                android:text="Close"
+                android:textColor="#f7f7f7"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:padding="43dp" >
+        </LinearLayout>
+
+       
+
+        
+
+       
+
+        <TextView
+             android:id="@+id/txtupgrade"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="UPGRADE"
+            android:textColor="#000000"
+            android:textSize="32dp"
+             />
+
+        <TextView
+            android:id="@+id/popupallupgrade"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" and get 30 new and  challenging workouts for just 4.99 $"
+            android:textColor="#000000"
+            android:textSize="19dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="3dp" >
+
+            <Button
+                android:id="@+id/btnyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_portrait"
+                android:text="Yes!"
+                android:textColor="#7f7f7f"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+ 
+    
+
+</LinearLayout>

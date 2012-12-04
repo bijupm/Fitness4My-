@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+     android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="2dp" >
+
+    <!-- HEADER -->
+
+    <TableLayout
+        android:id="@+id/topheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="2dp"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical|center_horizontal" >
+             <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+           android:paddingTop="2dp"
+            android:gravity="left"
+            android:orientation="horizontal" >
+  		 <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+             ads:adUnitId="a15074fa73f350f"
+            ads:loadAdOnCreate="true" />
+  		 <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/headerimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/logo" />
+             </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:gravity="center|center_vertical|center_horizontal" >
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="3dp"
+                android:background="#92D050"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+            </View>
+        </TableRow>
+
+<!--         <TableRow -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:gravity="center_vertical|center_horizontal" > -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/videostarttitle" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:gravity="center_horizontal" -->
+<!--                 android:text="10 minute Buttocks Workout" -->
+<!--                 android:textColor="#000000" -->
+<!--                 android:textSize="16sp" -->
+<!--                 android:textStyle="bold" -->
+<!--                /> -->
+<!--         </TableRow> -->
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/topheaderLi"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topheader"
+        android:gravity="left|top"
+        android:orientation="horizontal"
+        android:paddingLeft="1dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp" >
+ 		<ImageView
+                android:id="@+id/startvedioimgurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="left|top"
+                  />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left|top"
+             android:paddingLeft="15dp"
+            android:orientation="vertical" >
+              <TextView
+                android:id="@+id/videostarttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="10 minute Buttocks Workout"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+               />
+              <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="130dp"
+    >
+            <TextView
+                android:id="@+id/videostartdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                weight="1"
+                android:lineSpacingExtra="2dp"
+                android:paddingRight="12dp"
+                android:text="You should have already downloaded the Android SDK. Now you need to set ... Your download package is an executable file that starts an installer. The installe"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+            
+         </ScrollView>  
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+  		 <TextView
+                android:id="@+id/lblProps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                weight="1"
+                android:lineSpacingExtra="2dp"
+                android:paddingRight="12dp"
+                android:text="Props :"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+             <TextView
+                android:id="@+id/videostartProps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                weight="1"
+                android:lineSpacingExtra="2dp"
+                android:paddingRight="12dp"
+                android:text="Chair"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+           </LinearLayout>
+           <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal" >
+            <ImageButton
+                android:id="@+id/startimageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topheaderLi"
+                android:layout_gravity="left|bottom"
+                android:background="@null"
+                android:src="@drawable/letsgo" />
+        </LinearLayout>
+   </LinearLayout>
+        
+    </LinearLayout>
+</RelativeLayout>

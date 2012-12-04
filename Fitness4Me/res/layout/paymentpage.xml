@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+     android:background="@drawable/home_bg"
+    android:layout_height="fill_parent">
+
+    <!-- HEADER -->
+  
+ <WebView android:id="@+id/mywebview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+
+   <Button
+       android:id="@+id/btnReturnHome"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/btn_landscape"
+       android:text="Home"
+       android:textColor="#FFFFFF"
+       android:textSize="17dp"
+       android:padding="10dp"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"
+       android:textStyle="normal" />
+                   
+</RelativeLayout >

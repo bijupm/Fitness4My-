@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="10dp"
+       android:paddingRight="10dp"
+    android:paddingTop="12dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:src="@drawable/logo" >
+        </ImageView>
+ 		<View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#B8D30B"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+            </View>
+        <ScrollView
+            android:id="@+id/scrollabouttext"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="70dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <WebView
+                android:id="@+id/mywebview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|left"
+        android:orientation="vertical"
+        android:padding="15dp" >
+<Button
+      android:id="@+id/imgAboutterms"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:textColor="#92D050"
+    android:textSize="15dp"
+    android:text="@string/linkterms"
+    />
+<View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+            </View>
+<Button
+    android:layout_width="wrap_content"
+     android:id="@+id/imgAboutpolicy"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+     android:textSize="15dp"
+    android:textColor="#92D050"
+    android:gravity="left"
+    android:text="@string/linkpolicy"
+    />
+     
+           
+    </LinearLayout>
+ <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+        android:gravity="bottom|left"
+        android:orientation="vertical"
+        android:padding="15dp" >
+<Button
+        android:id="@+id/btnaboutback"
+        android:textColor="#FFFFFF"
+        android:layout_width="130dp"
+    
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@drawable/btn_portrait"
+        />
+	 </LinearLayout>
+</RelativeLayout>

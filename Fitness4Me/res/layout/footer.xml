@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_alignParentBottom="true"
+	android:background="@drawable/home_bg"	
+  android:layout_height="wrap_content"
+  android:gravity="center_vertical|center_horizontal|bottom">
+<!-- <TableLayout android:gravity="center_vertical|center_horizontal|bottom" android:layout_gravity="bottom" android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:id="@+id/tableLayout1" android:layout_height="wrap_content" android:stretchColumns="*"> -->
+<!--     <TableRow android:layout_width="fill_parent" android:background="#FFFFFF" android:gravity = "center_vertical"> -->
+<!--        </TableRow> -->
+<!-- </TableLayout>   -->
+</LinearLayout>

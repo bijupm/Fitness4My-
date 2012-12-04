@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="1dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp" >
+
+    <ScrollView
+        android:id="@+id/scrollViewOne"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="43dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <WebView
+            android:id="@+id/mywebview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingBottom="1dp" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp" />
+
+        <Button
+            android:id="@+id/btnfinish"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_portrait"
+            android:text="I ACCEPT"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

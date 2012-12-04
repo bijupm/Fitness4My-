@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_bg"
+    android:gravity="center_horizontal|top" >
+
+    <!-- HEADER -->
+
+    <LinearLayout
+        android:id="@+id/topfeedheader"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:stretchColumns="*" >
+
+        <ImageView
+            android:id="@+id/headerfeedicon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imglady"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topfeedheader"
+        android:background="@drawable/big_green_container"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:padding="22dp" >
+
+        <TextView
+            android:id="@+id/txtthankyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:text="Please help us!"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtheadtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="left"
+            android:text="We are committed to giving the user the best results using Fitness4.me. But we need your feedback to get better! Please tell us what we can improve" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtfeedcomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/second_btn"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

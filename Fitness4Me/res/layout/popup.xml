@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+   
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|top"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/upgrade"
+        android:orientation="vertical" >
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|top"
+        android:paddingRight="10dp"
+        android:orientation="horizontal" >
+ <ImageButton
+            android:id="@+id/popupClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:background="@drawable/popupclose"
+            android:text="Close"
+            android:textColor="#f7f7f7"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+ </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingTop="40dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                 android:id="@+id/txtHead"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Supersaver offer"
+                android:textColor="#000000"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/popupall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="12dp"
+                android:text="and get 30 new and challenging workouts for just 4.99 $"
+                android:textColor="#000000"
+                android:textSize="19dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="3dp" >
+
+                <Button
+                    android:id="@+id/btnAll"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/btn_portrait"
+                    android:text="Yes"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

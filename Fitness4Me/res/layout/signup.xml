@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+           android:gravity="top"
+        android:background="@drawable/home_bg"
+          >
+           <!-- HEADER -->
+               <ImageView
+        android:id="@+id/headericon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        
+        android:src="@drawable/pushup" >
+    </ImageView>
+     
+        <LinearLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+           android:gravity="center"
+        android:padding="30dp"
+          >    
+          <!--  Email Label -->
+          <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/lblsinup"
+                     android:textSize="18sp"
+                 android:textColor="#ffffff"
+                  android:text="New to Fitness4.me ?"/>
+          <Button android:id="@+id/btnSignup"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                   style="@style/Buttonportrait"
+                  android:text="Sign Up"/>
+          <!--  Password Label -->
+          
+           
+         
+          <TextView android:layout_width="fill_parent"
+                android:gravity="center"
+                 android:textSize="18sp"
+                 android:id="@+id/lblhave"
+                  android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                  android:text="You already have a \nfitness4.me account?"/>
+           <Button android:id="@+id/btnLoginScreen"
+               
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                     style="@style/Buttonportrait"
+                  android:text="Sign In"/>
+           <View android:padding="5dp"
+    android:layout_width="fill_parent"
+    android:layout_height="5dp"
+     />
+       
+ </LinearLayout>
+     <LinearLayout  
+        android:gravity="center_horizontal"
+         
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" 
+        android:orientation="horizontal"   android:padding="3dp"
+        >
+<com.google.ads.AdView android:id="@+id/adViewSignUp"
+                         android:layout_width="fill_parent"
+                          
+                         android:layout_height="wrap_content"
+                          ads:adUnitId="a15074fa73f350f"
+                         ads:adSize="BANNER"
+                       
+                          ads:loadAdOnCreate="true"/> 
+          </LinearLayout>
+ 
+</LinearLayout>
+<!-- Login Form Ends -->
